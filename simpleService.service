@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple Memory Usage Service
+After=network.target
+
+[Service]
+ExecStart=/etc/simpleService.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
